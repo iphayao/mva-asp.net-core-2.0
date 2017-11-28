@@ -1,0 +1,12 @@
+C:\Users\Phayao\source\repos\mva-asp.net-core-2\intermediate\01_AspNetCoreInterals\MyMVA\MyMVA\bin\Debug\netcoreapp2.0\MyMVA.deps.json
+C:\Users\Phayao\source\repos\mva-asp.net-core-2\intermediate\01_AspNetCoreInterals\MyMVA\MyMVA\bin\Debug\netcoreapp2.0\MyMVA.runtimeconfig.json
+C:\Users\Phayao\source\repos\mva-asp.net-core-2\intermediate\01_AspNetCoreInterals\MyMVA\MyMVA\bin\Debug\netcoreapp2.0\MyMVA.runtimeconfig.dev.json
+C:\Users\Phayao\source\repos\mva-asp.net-core-2\intermediate\01_AspNetCoreInterals\MyMVA\MyMVA\bin\Debug\netcoreapp2.0\MyMVA.dll
+C:\Users\Phayao\source\repos\mva-asp.net-core-2\intermediate\01_AspNetCoreInterals\MyMVA\MyMVA\bin\Debug\netcoreapp2.0\MyMVA.pdb
+C:\Users\Phayao\source\repos\mva-asp.net-core-2\intermediate\01_AspNetCoreInterals\MyMVA\MyMVA\obj\Debug\netcoreapp2.0\MyMVA.csprojResolveAssemblyReference.cache
+C:\Users\Phayao\source\repos\mva-asp.net-core-2\intermediate\01_AspNetCoreInterals\MyMVA\MyMVA\obj\Debug\netcoreapp2.0\MyMVA.csproj.CoreCompileInputs.cache
+C:\Users\Phayao\source\repos\mva-asp.net-core-2\intermediate\01_AspNetCoreInterals\MyMVA\MyMVA\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\Phayao\source\repos\mva-asp.net-core-2\intermediate\01_AspNetCoreInterals\MyMVA\MyMVA\obj\Debug\netcoreapp2.0\MyMVA.AssemblyInfoInputs.cache
+C:\Users\Phayao\source\repos\mva-asp.net-core-2\intermediate\01_AspNetCoreInterals\MyMVA\MyMVA\obj\Debug\netcoreapp2.0\MyMVA.AssemblyInfo.cs
+C:\Users\Phayao\source\repos\mva-asp.net-core-2\intermediate\01_AspNetCoreInterals\MyMVA\MyMVA\obj\Debug\netcoreapp2.0\MyMVA.dll
+C:\Users\Phayao\source\repos\mva-asp.net-core-2\intermediate\01_AspNetCoreInterals\MyMVA\MyMVA\obj\Debug\netcoreapp2.0\MyMVA.pdb
