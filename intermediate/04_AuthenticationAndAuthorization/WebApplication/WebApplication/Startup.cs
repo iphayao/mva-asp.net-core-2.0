@@ -11,6 +11,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using WebApplication.Data;
 using WebApplication.Services;
+using Microsoft.Extensions.Logging;
+using System.Security.Claims;
 
 namespace WebApplication
 {
@@ -27,11 +29,17 @@ namespace WebApplication
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+                options.UseInMemoryDatabase("AuthSample"));
 
             services.AddIdentity<ApplicationUser, IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();
+
+            services.AddAuthorization(configure =>
+            {
+                configure.AddPolicy("CanadiansOnly", policy => policy.RequireClaim(ClaimTypes.Country, "Canada"));
+                configure.AddPolicy("CanadianOrAdmin", policy => policy.AddRequirements(new CanadianRequirement()));
+            });
 
             services.AddAuthentication().AddMicrosoftAccount(microsoftOptions =>
             {
@@ -52,7 +60,7 @@ namespace WebApplication
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
             if (env.IsDevelopment())
             {
@@ -68,6 +76,8 @@ namespace WebApplication
             app.UseStaticFiles();
 
             app.UseAuthentication();
+
+            SampleData.InitializeData(app.ApplicationServices, loggerFactory);
 
             app.UseMvc(routes =>
             {

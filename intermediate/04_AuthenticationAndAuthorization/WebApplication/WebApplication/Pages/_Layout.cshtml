@@ -1,8 +1,10 @@
+﻿@inject IAuthorizationService AuthorizationService
+@using Microsoft.AspNetCore.Authorization
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" scontent="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - WebApplication</title>
 
     <environment include="Development">
@@ -31,7 +33,10 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li><a asp-page="/Index">Home</a></li>
-                    <li><a asp-page="/About">About</a></li>
+                    @if ((await AuthorizationService.AuthorizeAsync(User, "CanadianOrAdmin")).Succeeded)
+                    {
+                        <li><a asp-page="/About">About</a></li>
+                    }
                     <li><a asp-page="/Contact">Contact</a></li>
                 </ul>
                 @await Html.PartialAsync("_LoginPartial")
