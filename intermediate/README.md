@@ -18,3 +18,6 @@ Get started with Tag, Helpers, explore authentication with ASP.NET Core, and get
 * Get the detials on authentication and authorization.
 * Learn about Web APIs and Swagger.
 * Find out how to publish and deploy with Azure and Docker.
+
+#### Prerequisites
+None
