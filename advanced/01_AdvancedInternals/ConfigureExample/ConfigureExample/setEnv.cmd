@@ -1,0 +1,2 @@
+﻿set MyConfiguaration__MenubarBgColor=yellow
+set MyConfiguaration__MenubarColor=black
